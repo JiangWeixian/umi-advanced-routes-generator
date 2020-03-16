@@ -25,4 +25,5 @@ export default {
       { enable: true }
     ],
   ],
+  history: 'hash'
 }
