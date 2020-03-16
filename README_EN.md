@@ -11,19 +11,19 @@
   - [LICENSE](#license)
 
 
-**WARNING:** *不同版本的umi有不同路由生成模板, 请使用**umi@2.9.6***
+**WARNING:** *different umi version has different router template version, please use **umi@2.9.6***
 
 ## How it works?
 
-Modal page根据[react-router](https://reacttraining.com/react-router/web/example/modal-gallery)新特性, [umi-plugin-pro-routes]() 会异步的生成新的新的`router.js`, 然后覆盖原先的.
+Modal page depends on [react-router](https://reacttraining.com/react-router/web/example/modal-gallery), [umi-plugin-pro-routes]() will generate a new `router.js` to overwrite original one.
 
 ## ScreenShots
 
 ![pro-routes](/screenshots/pro-routes.gif)
 
 ## Usage
-> 查看[example](/example/pages/index.tsx)
-
+> see [example](/example/pages/index.tsx) for more details
+ 
 Configure in `.umirc.js`,
 
 ```js

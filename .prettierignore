@@ -34,3 +34,4 @@ jest
 example
 __test__
 *.tpl
+*.gif
