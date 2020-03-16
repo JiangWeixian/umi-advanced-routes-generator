@@ -12,12 +12,6 @@ export default {
         routes: {
           exclude: [/models\//, /components\//, /\/*\.styl\.d\.ts/],
         },
-        pwa: {
-          workboxOptions: {
-            importWorkboxFrom: 'local',
-            include: [],
-          },
-        },
       },
     ],
     [
