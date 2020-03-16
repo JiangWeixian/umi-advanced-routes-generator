@@ -5,6 +5,7 @@ import dynamic from 'umi/dynamic'
 import renderRoutes from 'umi/lib/renderRoutes'
 import history from '@tmp/history';
 {{{ imports }}}
+{{{ pkg }}}
 
 const Router = {{{ RouterRootComponent }}};
 
@@ -72,11 +73,6 @@ const initPreviouseLocation = (location) => {
 }
 
 const modalRoutes = {{{ modalRouterContent }}}
-const NotFoundRoute = {
-  "path": "/403",
-  "exact": true,
-  "component": __IS_BROWSER ? dynamic({ loader: () => import('../403.tsx') }) : require('../403.tsx').default
-}
 
 const RouterSwitch = (props) => {
   const filteredRoutes = routes
@@ -105,11 +101,6 @@ const RouterSwitch = (props) => {
       { renderRoutes(filteredRoutes, props.extraProps, props.switchProps) }
       {
         finalModalRoutes
-      }
-      {
-        (!finalModalRoutes || finalModalRoutes.length === 0) && props.isInModalRoutes
-          ? <Route component={NotFoundRoute.component} />
-          : null
       }
     </>
   )

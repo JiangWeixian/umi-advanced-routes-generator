@@ -13,6 +13,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "umi-tools build",
+    "dev": "umi dev --prefix example",
     "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish --any-branch",
     "update": "npm update && npm update --save-dev",
     "prettier": "prettier --config .prettierrc --write '**/*'"
@@ -44,7 +45,6 @@
   "dependencies": {
     "mustache": "3.0.1",
     "path-is-root": "0.1.0",
-    "react": "16.9.0",
     "umi-utils": "1.4.1"
   }
 }

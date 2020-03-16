@@ -21,7 +21,6 @@ type Routes = {
 
 export type IOpts = {
   enable?: boolean
-  auth?: boolean
 }
 
 type Props = {
@@ -33,12 +32,10 @@ type Props = {
 class FilesGenerator extends _FilesGenerator {
   routerTplPath: string
   routesContent: string
-  auth: boolean
   constructor(props: Props) {
     super(props)
     this.routerTplPath = props.routerTplPath
     this.routesContent = ''
-    this.auth = !!props.auth
   }
 
   // Create New router.js after Original router.js
@@ -102,7 +99,6 @@ class FilesGenerator extends _FilesGenerator {
           initialValue: [],
         }),
       ).join('\n'),
-      authed: this.auth,
       routes,
       modalRouterContent,
       routerContent,
@@ -172,7 +168,6 @@ export default function(api: IApi, opts: IOpts) {
     service: api,
     RoutesManager,
     routerTplPath: ROUTER_TPL_PATH,
-    auth: opts.auth,
   })
   api.onGenerateFiles(() => {
     return new Promise(function(resolve) {
