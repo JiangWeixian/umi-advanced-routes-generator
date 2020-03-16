@@ -1,0 +1,23 @@
+{
+  "name": "pro-routes",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "umi dev",
+    "lint": "echo lint",
+    "build": "npm run lint && umi build",
+    "lint:manualy": "tslint --project . && stylint",
+    "prettier": "prettier --config .prettierrc --write '**/*'"
+  },
+  "dependencies": {
+    "antd": "^3.26.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "16.8.5",
+    "typescript": "3.7.2",
+    "umi": "2.9.6",
+    "umi-plugin-react": "1.10.1"
+  }
+}
