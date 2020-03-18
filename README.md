@@ -13,6 +13,8 @@
 
 **WARNING:** *不同版本的umi有不同路由生成模板, 请使用**umi@2.9.6***
 
+[英文](/README_EN.md) | [中文](/README.md)
+
 ## How it works?
 
 Modal page根据[react-router](https://reacttraining.com/react-router/web/example/modal-gallery)新特性, [umi-plugin-pro-routes]() 会异步的生成新的新的`router.js`, 然后覆盖原先的.

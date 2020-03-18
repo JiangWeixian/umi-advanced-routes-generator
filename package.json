@@ -1,11 +1,14 @@
 {
   "name": "umi-plugin-pro-routes",
   "version": "1.0.0",
-  "description": "router",
+  "description": "modal page gallery plugin for umi",
   "authors": {
     "name": "jiangweixian"
   },
-  "repository": "/umi-plugin-pro-routes",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/JiangWeixian/umi-advanced-routes-generator"
+  },
   "peerDependencies": {
     "umi": "2.9.6",
     "react": "16.9.0"
