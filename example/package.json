@@ -16,8 +16,8 @@
   "devDependencies": {
     "@types/react": "^16.9.23",
     "@types/react-dom": "16.8.5",
+    "@umijs/preset-react": "^1.4.19",
     "typescript": "3.7.2",
-    "umi": "2.9.6",
-    "umi-plugin-react": "1.10.1"
+    "umi": "^3.1.4"
   }
 }

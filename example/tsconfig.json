@@ -19,7 +19,8 @@
     "baseUrl": ".",
     "skipLibCheck": true,
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@@/*": ["src/.umi/*"],
     }
   },
   "exclude": ["node_modules"]

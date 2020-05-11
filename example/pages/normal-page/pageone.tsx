@@ -4,12 +4,16 @@
 
 import React from 'react'
 import { Drawer } from 'antd'
-import { router } from 'umi'
+import { history } from 'umi'
 
-export default () => {
+const PageOne = () => {
   return (
-    <Drawer visible={true} onClose={() => router.go(-1)}>
+    <Drawer visible={true} onClose={() => history.go(-1)}>
       page one
     </Drawer>
   )
 }
+
+PageOne.title = 'xx'
+
+export default PageOne

@@ -1,5 +1,5 @@
 import React from 'react'
-import { router } from 'umi'
+import { history } from 'umi'
 import { Button } from 'antd'
 
 export default () => {
@@ -8,7 +8,7 @@ export default () => {
       <li>
         <Button
           onClick={() => {
-            router.push({
+            history.push({
               pathname: '/modal-page/pageone',
               search: 'modalKey=PageOne',
             })
@@ -20,7 +20,7 @@ export default () => {
       <li>
         <Button
           onClick={() => {
-            router.push({
+            history.push({
               pathname: '/normal-page/pageone',
             })
           }}
